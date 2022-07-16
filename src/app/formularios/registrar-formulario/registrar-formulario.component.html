@@ -2,8 +2,20 @@
 
 <form (submit)="enviarFormulario()" [formGroup]="form">
   <mat-form-field appearance="outline">
-    <mat-label>Tipo Identificacion</mat-label>
+    <mat-label>Tipo Identificacion*</mat-label>
     <input formControlName="tipoIdentifiacion" matInput />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Identificacion*</mat-label>
+    <input formControlName="identifiacion" matInput />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Nombres*</mat-label>
+    <input formControlName="nombres" matInput />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Apellidos*</mat-label>
+    <input formControlName="apellidos" matInput />
   </mat-form-field>
 
   <div>

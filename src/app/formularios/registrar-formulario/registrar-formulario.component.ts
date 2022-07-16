@@ -16,7 +16,10 @@ export class RegistrarFormularioComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      tipoIdentificacion: ''
+      tipoIdentificacion: '',
+      identificacion: '',
+      nombres: '',
+      apellidos: ''
     });
   }
 
