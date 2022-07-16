@@ -1,0 +1,13 @@
+<h2>FORMULARIO</h2>
+
+<form (submit)="enviarFormulario()" [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>Tipo Identificacion</mat-label>
+    <input formControlName="tipoIdentifiacion" matInput />
+  </mat-form-field>
+
+  <div>
+    <button mat-flat-button color="primary">Enviar</button>
+    <a mat-stroked-button routerLink="/home">Cancelar</a>
+  </div>
+</form>
