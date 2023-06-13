@@ -1,27 +1,4 @@
+<h2>FORMULARIO</h2>
 
-  <h2>FORMULARIO</h2>
-
-  <form (submit)="enviarFormulario()" [formGroup]="form">
-    <mat-form-field appearance="outline">
-      <mat-label>Tipo Identificacion*</mat-label>
-      <input formControlName="tipoIdentificacion" matInput />
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Identificacion*</mat-label>
-      <input formControlName="identificacion" matInput />
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Nombres*</mat-label>
-      <input formControlName="nombres" matInput />
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Apellidos*</mat-label>
-      <input formControlName="apellidos" matInput />
-    </mat-form-field>
-  
-    <div>
-      <button mat-flat-button color="primary">Enviar</button>
-      <a mat-stroked-button routerLink="/home">Cancelar</a>
-    </div>
-  </form>
+<app-formulario-persona (submit)="enviarFormulario($event)"></app-formulario-persona>
 

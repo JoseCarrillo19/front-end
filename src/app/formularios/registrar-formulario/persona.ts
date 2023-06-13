@@ -1,0 +1,22 @@
+export interface personaDto{
+    tipoIdentificacion: string,
+      identificacion: string,
+      nombres:  string,
+      apellidos:  string,
+      fechaNacimiento: Date,
+      edad:  string,
+      sexo: string,
+      estadoCivil: string,
+      escolaridad: string,
+      cominidadIndigena: string,
+      tipoPoblacion: string,
+      parentesco: string,
+      profesion: string,
+      integrantes: string,
+      telefono: string,
+      nombreCompleto: string,
+      codigoFamilia: string,
+      integrantesFamilia: string,
+      vigencia: string,
+      observaciones: string
+}

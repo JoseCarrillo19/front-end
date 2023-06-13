@@ -12,6 +12,16 @@ import { RegistrarFormularioComponent } from './formularios/registrar-formulario
 import { ConsultasFormularioComponent } from './formularios/consultas-formulario/consultas-formulario.component';
 import { ConsultasGeneralesFormularioComponent } from './formularios/consultas-generales-formulario/consultas-generales-formulario.component';
 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { FormularioPersonaComponent } from './Persona/formulario-persona/formulario-persona.component';
+import { PersonaEditarFormularioComponent } from './personaEditar/persona-editar-formulario/persona-editar-formulario.component';
+import { FiltroFormularioComponent } from './PersonaFiltro/filtro-formulario/filtro-formulario.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +30,9 @@ import { ConsultasGeneralesFormularioComponent } from './formularios/consultas-g
     RegistrarFormularioComponent,
     ConsultasFormularioComponent,
     ConsultasGeneralesFormularioComponent,
+    FormularioPersonaComponent,
+    PersonaEditarFormularioComponent,
+    FiltroFormularioComponent,
 
   ],
   imports: [
@@ -27,7 +40,12 @@ import { ConsultasGeneralesFormularioComponent } from './formularios/consultas-g
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
