@@ -14,10 +14,10 @@ export class FormularioPersonaComponent implements OnInit {
   form: FormGroup;
 
   @Output()
-  submit: EventEmitter<personaDto> = new EventEmitter<personaDto>();
+  onSubmit: EventEmitter<personaDto> = new EventEmitter<personaDto>();
 
   enviarFormulario(){
-    this.submit.emit(this.form.value);
+    this.onSubmit.emit(this.form.value);
     
   }
 
